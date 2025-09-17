@@ -4,6 +4,30 @@
     box-sizing: border-box;
 }
 
+:root {
+    --red: hsl(5,89%,36%);
+}
+
 body {
-    font-size: 1.5em;
+    font-family: "PT Sans", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Merriweather", serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+header {
+    border-top: 0.5em solid navy;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+
+#header-grid{
+    /*To do: apply grid styles */
+}
+
+#header-logo {
+    text-align: center;
+    padding: 15px 0; /* Adds space on the top and bottom of the div */
 }
