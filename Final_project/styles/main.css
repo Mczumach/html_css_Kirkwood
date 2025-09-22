@@ -1,0 +1,47 @@
+* {
+    max-width: 100%;
+    max-height: 100%;
+    box-sizing: border-box;
+}
+
+:root {
+    --dark-blue: 
+rgb(4, 4, 106);
+    --blue: 
+rgb(0, 191, 255);
+    --blue-light: 
+rgb(69, 208, 255);
+}
+
+header {
+    border-top: 0.5em solid var(--dark-blue);
+    box-shadow: 0 5px 10px 
+rgba(0,0,0,0.2);
+}
+
+#header-logo {
+    text-align: center;
+    padding:15px 0;/* Adds space to the top and bottom of the logo */
+}
+
+
+
+#header-mobile-nav  {
+    background-color: var(--dark-blue)
+
+}
+
+#header-bottom-nav li {
+    border-bottom: 1px solid
+    grey;
+    padding: 20px;
+}
+
+#header-bottom-nav a {
+    font-size: 1.2em /*increases font size */
+    display inline-block /* allows for the adding of pagging/margins */
+}
+
+#header-bottom-nav .active, #header-bottom-nav a:hover {
+    color: var(--blue);
+}
