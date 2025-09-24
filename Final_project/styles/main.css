@@ -22,8 +22,13 @@ rgba(23, 3, 3, 0.2);
 #header-logo {
     text-align: center;
     padding:15px 0;/* Adds space to the top and bottom of the logo */
+    height: 120x;
+    width: 120px;
 }
 
+#header-grid {
+    background-color: whitesmoke;
+}
 
 
 #header-mobile-nav  {
