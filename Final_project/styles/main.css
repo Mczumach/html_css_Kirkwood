@@ -16,7 +16,7 @@ rgb(69, 208, 255);
 header {
     border-top: 0.5em solid var(--dark-blue);
     box-shadow: 0 5px 10px 
-rgba(0,0,0,0.2);
+rgba(23, 3, 3, 0.2);
 }
 
 #header-logo {
@@ -27,10 +27,18 @@ rgba(0,0,0,0.2);
 
 
 #header-mobile-nav  {
-    background-color: var(--dark-blue)
+    background-color:var(--dark-blue);
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
 
 }
-
+#mobile-nav {
+    color: white;
+    font-size: 2em; /* Makes the navigation icon bigger */
+    margin: 0 0.25em; /* Adds space to the left/right of the mobile nav */
+    cursor: pointer;
+}
 #header-bottom-nav li {
     border-bottom: 1px solid
     grey;
