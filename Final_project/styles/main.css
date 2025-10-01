@@ -14,7 +14,7 @@ rgb(69, 208, 255);
 }
 
 body {
-    background-color: black;
+    background-color: lightgray;
 }
 header {
     border-top: 0.5em solid maroon;
@@ -35,11 +35,10 @@ rgba(23, 3, 3, 0.2);
 
 
 #header-mobile-nav  {
-    background-color:maroon;
-    display: flex; 
+    background-color: maroon;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 #mobile-nav {
     color: white;
@@ -59,5 +58,5 @@ rgba(23, 3, 3, 0.2);
 }
 
 #header-bottom-nav .active, #header-bottom-nav a:hover {
-    background: grey;
+    background: lightgrey;
 }
