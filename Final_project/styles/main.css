@@ -49,14 +49,21 @@ rgba(23, 3, 3, 0.2);
 #header-bottom-nav li {
     border-bottom: 1px solid
     grey;
-    padding: 20px;
+    
+}
+
+#header-bottom-nav {
+    width:50%;
+    background-color:whitesmoke
 }
 
 #header-bottom-nav a {
-    font-size: 1.2em /*increases font size */
-    display inline-block /* allows for the adding of pagging/margins */
+    font-size: 1.2em; /*increases font size */
+    display: block; /* allows for the adding of pagging/margins */
+    color:green;
+    padding: 20px;
 }
-
-#header-bottom-nav .active, #header-bottom-nav a:hover {
+#header-bottom-nav a:hover {
     background: lightgrey;
+    color:red;
 }
