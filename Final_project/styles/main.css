@@ -62,8 +62,14 @@ rgba(23, 3, 3, 0.2);
     display: block; /* allows for the adding of pagging/margins */
     color:green;
     padding: 20px;
+    border-right: 1px solid;
 }
 #header-bottom-nav a:hover {
     background: lightgrey;
     color:red;
+}
+#textbox1 {
+    text-align: center; 
+    border: 1px solid black;
+    padding: 10px;
 }

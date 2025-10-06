@@ -113,7 +113,7 @@ header nav a {
 #jumbotron-text h1 {
     color: var(--blue);
     font-size: 2.5em;
-    font-weight: 400; /* Don't make the text bold */
+    font-weight: normal; /* Don't make the text bold */
     line-height: 1.25em;
 }
 
@@ -122,3 +122,133 @@ header nav a {
     margin: 1em 0; /* Add space above and below paragraph */
     line-height: 1.25em;
 }
+
+
+#about-us {
+    padding: 30px;
+    margin-top: 50px;
+}
+
+/* Source: https://stackoverflow.com/a/6382036/6629315 */
+#about-us hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+#about-us h4 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    margin: 20px 0;
+    color: var(--navy);
+}
+
+#about-us h2 {
+    font-size: 2em;
+    text-align: center;
+    font-weight: normal;
+    line-height: 1.25em;
+}
+
+#about-us img {
+    width: 150px;
+    height: 5px;
+    /* If text-align: center doesn't work, set the display property to block, and use margin: 0 auto instead */
+    margin: 15px auto;
+    display: block;
+}
+#about-us p {
+    font-size: 1.25em;
+    text-align: center;
+    margin: 15px 0;
+    line-height: 1.5em;
+}
+#about-cards article {
+    margin: 25px 0;
+}
+#about-cards .card-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 1em;
+}
+#about-cards .card-header i {
+    color: var(--blue);
+    font-size: 1.5em;
+}
+#about-cards .card-header h3 {
+    font-size: 1.25em;
+}
+#about-cards blockquote {
+    border-left: 2px solid #ccc;
+    padding-left: 20px; /* separation between border and contents */
+    margin-left: 15px; /* Space outside of the border */
+    font-size: 1.1em;
+    line-height: 1.25em;
+    color: #555;
+}
+
+
+
+.parallax {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    z-index: -1;
+    background-image: url('https://www.lynchdallas.com/application/files/7515/9231/1199/feature-full.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .parallax-text {
+    z-index: 1;
+    background-image: url("https://www.lynchdallas.com/application/themes/lynchdallas/img/bkg-pattern.jpg");
+    padding: 1.5em;
+    width: 80%;
+    border-top: 5px solid var(--blue);
+  }
+  
+  .parallax-text h3 {
+    color: var(--blue);
+    font-size: 2em;
+    font-weight: 400;
+    line-height: 1.25em;
+  }
+  
+  .parallax-text h4 {
+    color: 
+  white;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding: 20px 0;
+  }
+  
+  .parallax-text p {
+    color: 
+  white;
+    margin: 1em 0; /* Add space above and below paragraph */
+    line-height: 1.25em;
+  }
+  
+  
+  footer {
+    min-height: 50vh;
+  }
+
+
+
