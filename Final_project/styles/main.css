@@ -14,23 +14,25 @@ rgb(69, 208, 255);
 }
 
 body {
-    background-color: lightgray;
+    background-color: #b3ac98
 }
 header {
-    border-top: 0.5em solid maroon;
+    border-top: 0.5em solid rgb(126, 49, 49);
     box-shadow: 0 5px 10px 
 rgba(23, 3, 3, 0.2);
 }
 
 #header-logo {
-    text-align: center;
+    text-align: right;
     padding:15px 0;/* Adds space to the top and bottom of the logo */
     height: 140px;
-    width: 120px;
+    width: 125px;
 }
-
+#logo {
+    border-radius                                                                                                                                                                                                                   : 15px;
+}
 #header-grid {
-    background-color: whitesmoke;
+    background-color: rgb(126, 49, 49);
 }
 
 
@@ -45,6 +47,7 @@ rgba(23, 3, 3, 0.2);
     font-size: 2em; /* Makes the navigation icon bigger */
     margin: 0 0.25em; /* Adds space to the left/right of the mobile nav */
     cursor: pointer;
+    place-items: left;
 }
 #header-bottom-nav li {
     border-bottom: 1px solid
@@ -69,19 +72,111 @@ rgba(23, 3, 3, 0.2);
     background: lightgrey;
     color:red;
 }
+
 #textbox1 {
     text-align: center; 
-    border: 1px solid black;
+    border: 2px solid maroon;
     padding: 10px;
     margin: 10px;
     border-radius: 15px;
     font-size: larger;
 }
 #taco{
-    border: 1px solid black;
+    border: 2px solid maroon;
     border-radius: 15px;
     margin: 10px;
     max-width: 95%;
     max-height: 100%;
     text-align:center;
+}
+#textbox2 {
+    text-align: center; 
+    border: 2px solid maroon;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+     font-size: x-large;
+}
+#About-Me-Header {
+    text-align: center; 
+    /* border: 1px solid black; */
+    padding: 10px;
+    margin: 10px;
+    /* border-radius: 15px; */
+     font-size: 60px;
+    font-family: 'Pirata One', cursive;
+}
+#Music {
+    text-align: center; 
+    /* border: 1px solid black; */
+    padding: 10px;
+    margin: 10px;
+    /* border-radius: 15px; */
+     font-size: 30px;
+     font-family: 'Aboreto', cursive;
+}
+
+.music-icon-container {
+    text-align: center;
+}
+.music-icon  {
+    font-size: 9.5em;
+}
+#Music-P {
+    text-align: center;
+    line-height: 150%;
+    font-size: large;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid maroon;
+    border-radius: 15px;
+}
+#Movies {
+    text-align: center; 
+    /* border: 1px solid black; */
+    padding: 10px;
+    margin: 10px;
+    /* border-radius: 15px; */
+     font-size: 30px;
+     font-family: 'Aboreto', cursive;
+}
+
+.Movie-icon-container {
+    text-align: center;
+}
+.movie-icon {
+    font-size: 9.5em;
+}
+#Movie-P {
+    text-align: center;
+    line-height: 150%;
+    font-size: large;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid maroon;
+    border-radius: 15px;
+}
+#Family {
+    text-align: center; 
+    /* border: 1px solid black; */
+    padding: 10px;
+    margin: 10px;
+    /* border-radius: 15px; */
+     font-size: 30px;
+     font-family: 'Aboreto', cursive;
+}
+.Family-icon-container {
+    text-align: center;
+}
+.family-icon {
+    font-size: 9.5em;
+}
+#Family-P {
+    text-align: center;
+    line-height: 150%;
+    font-size: large;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid maroon;
+    border-radius: 15px;
 }
