@@ -14,7 +14,8 @@ rgb(69, 208, 255);
 }
 
 body {
-    background-color: #b3ac98
+    background-image: linear-gradient(to bottom, rgb(207, 159, 96), rgb(184, 61, 61), rgb(207, 159, 96));
+    background-color: #b3ac98;
 }
 header {
     border-top: 0.5em solid rgb(126, 49, 49);
@@ -47,26 +48,29 @@ rgba(23, 3, 3, 0.2);
     font-size: 2em; /* Makes the navigation icon bigger */
     margin: 0 0.25em; /* Adds space to the left/right of the mobile nav */
     cursor: pointer;
-    place-items: left;
+    text-align: left;
 }
 #header-bottom-nav li {
     border-bottom: 1px solid
-    grey;
+    black;
     
 }
 
 #header-bottom-nav {
-    /* width:50%; */
+    /* width:50% */
     background-color:whitesmoke
 }
 
 #header-bottom-nav a {
     font-size: 1.2em; /*increases font size */
     display: block; /* allows for the adding of pagging/margins */
-    color:black;
+    color:rgba(255, 255, 255, 0.756);
     padding: 20px;
     border-right: 1px solid;
-    background-color: lightgray;
+    /* background-color: lightgray; */
+    background-color:  rgb(184, 61, 61);
+    text-decoration: none;
+
 }
 #header-bottom-nav a:hover {
     background: lightgrey;
