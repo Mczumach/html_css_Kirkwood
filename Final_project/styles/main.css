@@ -184,3 +184,37 @@ rgba(23, 3, 3, 0.2);
     border: 2px solid maroon;
     border-radius: 15px;
 }
+footer {
+    text-align: center;
+    padding: 100px 40px;
+    font-family: 'Pirata One', cursive;
+
+}
+#social {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2em;
+}
+footer a {
+
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+    font-size: 1.5em;
+    color: black;
+
+}
+footer a:hover {
+    text-decoration: underline;
+}
+footer h3 {
+    margin: 20px 0;
+}
+.social_icons {
+    width: 50px;
+    height: 50px;
+}
+#social-links {
+    display: flex; /* Places block items side-by-side */
+    justify-content: center; /* Centers flex content horizontally */
+  }
