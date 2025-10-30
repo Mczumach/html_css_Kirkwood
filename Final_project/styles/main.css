@@ -218,3 +218,8 @@ footer h3 {
     display: flex; /* Places block items side-by-side */
     justify-content: center; /* Centers flex content horizontally */
   }
+#contact {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.25em;
+}
