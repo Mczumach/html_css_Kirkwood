@@ -4,6 +4,22 @@
   box-sizing: border-box;
 }
 
+/**
+* Smooth scrolling on the whole document
+*/
+html {
+scroll-behavior: smooth;
+}
+
+/**
+* Animations can cause issues for users who suffer from motion sickness and other conditions. This prevents animated scrolling when users have specified that they’d prefer reduced motion.
+*/
+@media screen and (prefers-reduced-motion: reduce) {
+html {
+  scroll-behavior: auto;
+}
+}
+
 :root {
   --navy: rgb(0, 0, 128);
   --blue: rgb(0, 191, 255);
@@ -14,6 +30,18 @@ body {
   font-family: "PT Sans", serif;
   font-weight: 400;
   font-style: normal;
+  --bg-color: white; 
+  --text-color: black;
+
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+body {
+  --bg-color: black;
+  --text-color: white;
+}
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -24,7 +52,7 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
   border-top: 0.5em solid var(--navy);
-  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  /* box-shadow: 0 5px 10px rgba(0,0,0,0.2); */
 }
 
 #header-logo {
@@ -37,6 +65,12 @@ header nav a {
   text-decoration:none;
   color: var(--navy);
   font-weight: 700;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+header nav a {
+  color: white;
+}
 }
 
 #header-top-nav ul {
@@ -68,6 +102,13 @@ header nav a {
   align-items: center; /* Vertically centers the contact button with the mobile navigation */
 }
 
+.sticky {
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+z-index: 2;
+}
+
 /* Class selectors start with a period */
 .btn {
   background-color: var(--blue);
@@ -89,9 +130,16 @@ header nav a {
   cursor: pointer;
 }
 
+#header-bottom-nav {
+position: absolute;
+left: 0;
+width: 100%;
+}
+
 
 #header-bottom-nav li {
   border-bottom: 1px solid lightgrey;
+  background-color: white;
 }
 
 #header-bottom-nav a {
@@ -104,6 +152,9 @@ header nav a {
   color: var(--blue);
 }
 
+#jumbotron {
+scroll-margin-top: 3em;
+}
 
 #jumbotron-text {
   background-image: url("https://www.lynchdallas.com/application/themes/lynchdallas/img/bkg-pattern.jpg");
@@ -127,6 +178,7 @@ header nav a {
 #about-us {
   padding: 30px;
   margin-top: 50px;
+  scroll-margin-top: 3em;
 }
 
 /* Source: https://stackoverflow.com/a/6382036/6629315 */
@@ -154,7 +206,7 @@ header nav a {
   line-height: 1.25em;
 }
 
-#about-us img {
+#about-us img.divider {
   width: 150px;
   height: 5px;
   /* If text-align: center doesn't work, set the display property to block, and use margin: 0 auto instead */
@@ -167,6 +219,11 @@ header nav a {
   margin: 15px 0;
   line-height: 1.5em;
 }
+
+#about-cards {
+scroll-margin-top: 4em;
+}
+
 #about-cards article {
   margin: 25px 0;
 }
@@ -192,7 +249,15 @@ header nav a {
   color: #555;
 }
 
+@media screen and (prefers-color-scheme: dark) {
+#about-cards blockquote {
+  color: #ddd;
+}
+}
 
+#attorneys {
+scroll-margin-top: 3em;
+}
 
 .parallax {
   position: relative;
@@ -277,6 +342,12 @@ white;
   text-decoration: none;
 }
 
+@media screen and (prefers-color-scheme: dark) {
+  #footer-contact a {
+    color: #eee;
+  }
+}
+
 #footer-contact table {
   margin: 20px 0;
 }
@@ -315,6 +386,13 @@ white;
   transform: scale(1.2);
 } 
 
+@media screen and (prefers-color-scheme: dark) {
+#footer-contact .social-icons a:hover {
+  background-color: #eee;
+  color: black;
+}
+}
+
 
 
 #footer-copyright {
@@ -323,6 +401,7 @@ white;
   padding: 24px;
   text-align: center;
   font-size: 13px;
+  line-height: 16px;
 }
 
 #footer-copyright a {
@@ -352,7 +431,7 @@ white;
   height: 100%;
   object-fit: cover;
   z-index: -1;
-  opacity: .6;
+  opacity: .9;
   mix-blend-mode: overlay;
 }
 
@@ -393,4 +472,49 @@ white;
   font-size: 16px;
   display: inline-block;
   text-decoration: none;
+}
+
+/* I got half of this code from Google Gemini */
+#to-top-link {
+  padding: 20px;
+  background-color: dodgerblue;
+  -webkit-box-shadow: 2px 5px 7px 0px #000000; 
+  box-shadow: 2px 5px 7px 0px #000000;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  
+  /* Add this to hide the link by default */
+  display: none;
+  
+  /* Added for better icon centering */
+  width: 60px;  /* Fixed width */
+  height: 60px; /* Fixed height */
+  box-sizing: border-box; /* Include padding in width/height */
+  display: none; /* Hide by default */
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #333;
+}
+
+#to-top-link i {
+color: white;
+}
+
+/* This style will be applied by JavaScript */
+#to-top-link.show {
+display: flex; /* Use flex to center the icon */
+}
+
+/* This style will be applied by JavaScript */
+#to-top-link.show {
+display: flex; /* Use flex to center the icon */
+}
+
+/* This style will be applied by JavaScript */
+#to-top-link.show {
+display: flex; /* Use flex to center the icon */
 }
