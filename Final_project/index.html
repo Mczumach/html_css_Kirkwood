@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <title> Home | Bradley Watkins About me | Cedar Rapids, IA</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Home | Bradley Watkins About me | Cedar Rapids, IA</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
         <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,8 +14,9 @@
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <script defer src="scripts/main.js"></script>   
         <script defer src="scripts/scroll.js"></script>
+        <script defer src="scripts/relative-time.js"></script>
     </head>
-<body class="paginacontainer">
+<!-- <body class="paginacontainer"> -->
       <header>
           <div id="header-grid">
             <div id="header-logo">
@@ -25,6 +26,7 @@
 
               </a>
             </div>
+          </div>
             
 </header>
 <div class="sticky">
@@ -79,10 +81,78 @@
          </div>
         <h2 id="Family" style="text-align: center;">Family</h2>
         <p id="Family-P" style="text-align: center;">My Family has changed over the years in my life for many reasons. mainly because my mom and dad got married into 2 other families so i have 2 moms and 2 dads,which means i am technically apart of 4 different families! And recently I have slowly became apart of my girlfriend of 2 years family which would add that total up to 5 different families!</p>
-        
+
+<p></p>
+
+<section class="carousel" aria-label="Gallery">
+  <ol class="carousel__viewport">
+    <li id="carousel__slide1"
+        tabindex="0"
+        class="carousel__slide">
+        <img src="/Final_project/image/8766.jpg" alt="Slide 1">
+      <div class="carousel__snapper">
+        <a href="#carousel__slide4"
+           class="carousel__prev">Go to last slide</a>
+        <a href="#carousel__slide2"
+           class="carousel__next">Go to next slide</a>
+      </div>
+    </li>
+    <li id="carousel__slide2"
+        tabindex="0"
+        class="carousel__slide">
+        <img src="/Final_project/image/8769.jpg" alt="Slide 2">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide1"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide3"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide3"
+        tabindex="0"
+        class="carousel__slide">
+        <img src="https://via.placeholder.com/800x400.png?text=Slide+3" alt="Slide 3">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide2"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide4"
+         class="carousel__next">Go to next slide</a>
+    </li>
+    <li id="carousel__slide4"
+        tabindex="0"
+        class="carousel__slide">
+        <img src="https://via.placeholder.com/800x400.png?text=Slide+4" alt="Slide 4">
+      <div class="carousel__snapper"></div>
+      <a href="#carousel__slide3"
+         class="carousel__prev">Go to previous slide</a>
+      <a href="#carousel__slide1"
+         class="carousel__next">Go to first slide</a>
+    </li>
+  </ol>
+  <aside class="carousel__navigation">
+    <ol class="carousel__navigation-list">
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide1"
+           class="carousel__navigation-button">Go to slide 1</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide2"
+           class="carousel__navigation-button">Go to slide 2</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide3"
+           class="carousel__navigation-button">Go to slide 3</a>
+      </li>
+      <li class="carousel__navigation-item">
+        <a href="#carousel__slide4"
+           class="carousel__navigation-button">Go to slide 4</a>
+      </li>
+    </ol>
+  </aside>
+</section>
+
 <footer>
 <!-- <h3>About me</h3> -->
-<p id="social" style="text-align: center;">PAGES</p>
+<p class="social" style="text-align: center;">PAGES</p>
 
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -90,23 +160,20 @@
       <li><a href="Final_project/index_subpages/Important_people/Hobbies/Hobbies.html">Hobbies</a></li>
       <li><a href="#">Goals For the Future</a></li>
     </ul>
-    <p id="social" style="text-align: center;">MY SOCIALS</p>
+    <p class="social" style="text-align: center;">MY SOCIALS</p>
 <div id="social-links">
- <a href="https://www.facebook.com/bradley.scott.watkins/" target="_blank"><img class="social_icons" src="image/square-facebook-brands-solid-full.svg"></a>
- <a href="https://www.instagram.com/darealbrad_/" target="_blank"><img class="social_icons" src="image/instagram-brands-solid-full.svg"></a>
- <a href="https://x.com/Bradley77056297" target="_blank"><img class="social_icons" src="image/x-twitter-brands-solid-full.svg"></a>
- <a href="https://open.spotify.com/user/bwatkins0428" target="_blank"><img class="social_icons" src="image/spotify-brands-solid-full.svg"></a>
+ <a href="https://www.facebook.com/bradley.scott.watkins/" target="_blank"><img class="social_icons" src="image/square-facebook-brands-solid-full.svg" alt="facebook icon"></a>
+ <a href="https://www.instagram.com/darealbrad_/" target="_blank"><img class="social_icons" src="image/instagram-brands-solid-full.svg" alt="instagram icon"></a>
+ <a href="https://x.com/Bradley77056297" target="_blank"><img class="social_icons" src="image/x-twitter-brands-solid-full.svg" alt="twitter icon"></a>
+ <a href="https://open.spotify.com/user/bwatkins0428" target="_blank"><img class="social_icons" src="image/spotify-brands-solid-full.svg" alt="spotify icon"></a>
 </div>
-    <p id="social" style="text-align: center;">CONTACT ME</p>
-    <p id="contact" style="text-align: center;">Phone:	319-325-2694</p>
-    <p id="contact" style="text-align: center;">Email:  Myemail@gmail.com</p>
-<style>
-#contact {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 1.25em;
-}
-</style>
+
+    <p class="social" style="text-align: center;">CONTACT ME</p>
+    <p class="contact" style="text-align: center;">Phone:	319-325-2694</p>
+    <p class="contact" style="text-align: center;">My Email	</p>
+    <p class="contact" style="text-align: center;"><img src="https://api.qrserver.com/v1/create-qr-code/?size=100x100&data=mailto:bwatkins0428@gmail.com" alt="Email QR Code"></p>
+
+    <div id="timer"></div>
 </footer>
 
 
