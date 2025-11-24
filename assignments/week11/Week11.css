@@ -1,0 +1,30 @@
+/* Shared Styles */
+#bluh {
+    border: 5px solid black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Use block for easier margin handling */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Mobile Styles (up to 767px) */
+@media screen and (max-width: 767px) {
+    #bluh {
+        height: 90em;
+        border: 10px solid red;
+        background-color: lightyellow;
+    }
+}
+
+/* Desktop Styles (768px and wider) */
+@media screen and (min-width: 768px) {
+    #bluh {
+        height: 120em;
+        border: 10px solid purple;
+        background-color: lightgreen;
+    }
+}
