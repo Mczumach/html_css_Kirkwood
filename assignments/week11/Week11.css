@@ -1,4 +1,3 @@
-/* Shared Styles */
 #bluh {
     border: 5px solid black;
     border-radius: 1.75em;
@@ -10,7 +9,7 @@
 img {
     max-width: 100%;
     height: auto;
-    display: block; /* Use block for easier margin handling */
+    display: block;
     margin-left: auto;
     margin-right: auto;
     border-radius: 1em;
@@ -31,6 +30,25 @@ img {
         height: 120em;
         border: 10px solid whitesmoke;
         background-color: whitesmoke;
+        display: flex;
+        max-width: 95% ;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+    }
+    #picture {
+        width: 50%;
+    }
+    #emptybox {
+        width: 50%;
+    }
+    #picture > picture {
+        height: 100%;
+        border-radius: 1.75em;
+    }
+    #dresser-img {
+        height: 100%;
+        object-fit: contain;
     }
 }
 html {
