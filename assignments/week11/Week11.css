@@ -1,3 +1,4 @@
+
 #bluh {
     border: 5px solid black;
     border-radius: 1.75em;
@@ -23,8 +24,20 @@ img {
     }
 }
 
+#Big-text {
+    font-size: 18px;
+}
+
+#emptybox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:40px;
+    padding:30px;
+}
+
 /* Desktop Styles (768px and wider) */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 900px) {
     #bluh { 
         height: 120em;
         border: 10px solid whitesmoke;
@@ -34,6 +47,7 @@ img {
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 40px;
+        flex-direction: row;
     }
     #picture {
         width: 50%;
@@ -49,7 +63,20 @@ img {
         height: 100%;
         object-fit: contain;
     }
+    #Big-text {
+        font-size: 3em;
+    }
+    #Small-text {
+        font-size: 1.2em;
+        line-height: 1.5;
+    }
 }
 html {
     background-color: #D3D3D3;
 }
+
+    
+    #Small-text {
+        font-size: 14px;
+        line-height: 25px;
+    }
