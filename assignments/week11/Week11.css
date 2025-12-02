@@ -4,7 +4,7 @@
     border-radius: 1.75em;
     background-color: #D3D3D3;
     max-height: 50em;
-    margin: 40px 0px 0px 0px
+    margin: 40px 0px 40px 0px
 }
 img {
     max-width: 100%;
@@ -37,7 +37,7 @@ img {
 }
 
 /* Desktop Styles (768px and wider) */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1000px) {
     #bluh { 
         height: 120em;
         border: 10px solid whitesmoke;
